@@ -6,7 +6,7 @@ class Horse:
         pass
 
     def run(self, dx):
-        self.x_distance = self.x_distance + dx
+        self.x_distance += dx
         return self.x_distance
 
 class Eagle:
@@ -14,7 +14,7 @@ class Eagle:
     sound = 'I train, eat, sleep, and repeat'
 
     def fly(self, dy):
-        self.y_distance = self.y_distance + dy
+        self.y_distance += dy
 
 class Pegasus(Eagle, Horse):
     def move(self, dx, dy):
