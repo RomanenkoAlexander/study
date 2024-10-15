@@ -1,5 +1,5 @@
 def custom_write(file_name, strings):
-    file = open(file_name, 'a', encoding='utf-8')
+    file = open(file_name, 'w', encoding='utf-8')
     row_count = 0;
     # content = file.read()
     # return content
