@@ -19,6 +19,7 @@ class Bank():
     def take(self):
         for i in range(1, 101):
             withdrawal = random.randint(50, 500)
+            print(f'Запрос на {withdrawal}')
             if withdrawal <= self.balance:
                 self.balance -= withdrawal
                 print(f'Снятие: {withdrawal}. Баланс: {self.balance}')
